@@ -50,7 +50,7 @@ public class ExecuteTests extends Base
 		objAddEmp.saveDetails();
 		
 		Assert.assertTrue(objEditEmp.verifyUpdatedDetails().contains(ReadInputProperties.GetValue("Label")));
-		System.out.println("Employee Details updated successfully.");
+		System.out.println("Employee Details updated successfully..");
 		
 	}
 }
