@@ -5,10 +5,10 @@
     <classes>
       <class name="Test.ExecuteTests">
         <methods>
+          <include name="LogOut"/>
           <include name="UpdateEmployee"/>
           <include name="CreateEmployee"/>
           <include name="launchBrowser"/>
-          <include name="closeBrowser"/>
           <include name="Login"/>
         </methods>
       </class> <!-- Test.ExecuteTests -->

@@ -1,33 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21706" started-at="2017-05-08T13:58:31Z" finished-at="2017-05-08T13:58:53Z">
+  <suite name="Default suite" duration-ms="23422" started-at="2017-05-10T05:23:41Z" finished-at="2017-05-10T05:24:04Z">
     <groups>
     </groups>
-    <test name="OrangeHRM" duration-ms="21706" started-at="2017-05-08T13:58:31Z" finished-at="2017-05-08T13:58:53Z">
+    <test name="Default test" duration-ms="23422" started-at="2017-05-10T05:23:41Z" finished-at="2017-05-10T05:24:04Z">
       <class name="Test.ExecuteTests">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="launchBrowser" is-config="true" duration-ms="10856" started-at="2017-05-08T19:28:31Z" finished-at="2017-05-08T19:28:42Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="launchBrowser" is-config="true" duration-ms="6599" started-at="2017-05-10T10:53:41Z" finished-at="2017-05-10T10:53:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="Login" duration-ms="2886" started-at="2017-05-08T19:28:42Z" finished-at="2017-05-08T19:28:45Z">
+        <test-method status="PASS" signature="Login()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="Login" duration-ms="4104" started-at="2017-05-10T10:53:47Z" finished-at="2017-05-10T10:53:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="CreateEmployee()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="CreateEmployee" duration-ms="3461" started-at="2017-05-08T19:28:45Z" depends-on-methods="Test.ExecuteTests.Login" finished-at="2017-05-08T19:28:48Z">
+        <test-method status="PASS" signature="CreateEmployee()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="CreateEmployee" duration-ms="4160" started-at="2017-05-10T10:53:51Z" depends-on-methods="Test.ExecuteTests.Login" finished-at="2017-05-10T10:53:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateEmployee -->
-        <test-method status="PASS" signature="UpdateEmployee()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="UpdateEmployee" duration-ms="1627" started-at="2017-05-08T19:28:48Z" depends-on-methods="Test.ExecuteTests.CreateEmployee" finished-at="2017-05-08T19:28:50Z">
+        <test-method status="PASS" signature="UpdateEmployee()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="UpdateEmployee" duration-ms="1776" started-at="2017-05-10T10:53:55Z" depends-on-methods="Test.ExecuteTests.CreateEmployee" finished-at="2017-05-10T10:53:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UpdateEmployee -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="closeBrowser" is-config="true" duration-ms="2825" started-at="2017-05-08T19:28:50Z" finished-at="2017-05-08T19:28:53Z">
+        <test-method status="PASS" signature="LogOut()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="LogOut" duration-ms="3860" started-at="2017-05-10T10:53:57Z" depends-on-methods="Test.ExecuteTests.UpdateEmployee" finished-at="2017-05-10T10:54:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOut -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Test.ExecuteTests@1753acfe]" name="closeBrowser" is-config="true" duration-ms="2887" started-at="2017-05-10T10:54:01Z" finished-at="2017-05-10T10:54:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- Test.ExecuteTests -->
-    </test> <!-- OrangeHRM -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

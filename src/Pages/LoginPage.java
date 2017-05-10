@@ -17,7 +17,7 @@ public class LoginPage
 	private WebElement loginBtn;
 	
 	@FindBy(xpath = "//a[.='Welcome Admin']")
-	private WebElement loggedInUser;
+	public WebElement loggedInUser;
 	
 	public String verifyUser()
 	{

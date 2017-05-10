@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import Pages.AddEmployee;
 import Pages.EditEmployee;
 import Pages.LoginPage;
+import Pages.Logout;
 import Pages.ReadInputProperties;
 
 public class ExecuteTests extends Base
@@ -13,6 +14,7 @@ public class ExecuteTests extends Base
 	LoginPage objLogin;
 	AddEmployee objAddEmp;
 	EditEmployee objEditEmp;
+	Logout objLogout;
 	
 	@Test
 	public void Login()
@@ -51,6 +53,14 @@ public class ExecuteTests extends Base
 		
 		Assert.assertTrue(objEditEmp.verifyUpdatedDetails().contains(ReadInputProperties.GetValue("Label")));
 		System.out.println("Employee Details updated successfully..");
+	}
+	
+	@Test(dependsOnMethods = "UpdateEmployee")
+	public void LogOut() throws InterruptedException 
+	{
+		objLogout = new Logout(driver);
 		
+		Thread.sleep(2000);
+		objLogout.logout();
 	}
 }
